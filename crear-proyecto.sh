@@ -58,6 +58,8 @@ cd $PROJECT_NAME
 cat <<EOL > Dockerfile
 FROM node:lts
 
+RUN npm i -g @nestjs/cli
+
 WORKDIR /app
 
 COPY package*.json ./
